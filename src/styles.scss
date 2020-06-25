@@ -1,8 +1,19 @@
 html {
   height: 100vh;
+  color: #fff;
 }
 
 body {
   height: 100%;
   margin: 0px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+}
+
+li {
+  float: left;
+  padding: 15px;
 }

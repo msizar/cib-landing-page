@@ -1,26 +1,50 @@
-.toolbar {
+.header-root {
   position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 100px;
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  height: 50px;
   display: flex;
   align-items: center;
-  border-bottom: solid 1px white;
+  border-bottom: solid 0.5px white;
   color: white;
   font-weight: 600;
   z-index: 10;
 }
 
-.toolbar img {
+.header-root img {
   margin: 0 16px;
 }
 
-.toolbar #twitter-logo {
+.header-root #twitter-logo {
   height: 40px;
   margin: 0 16px;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
-.toolbar #twitter-logo:hover {
-  opacity: 0.8;
+.header-links__list li {
+  border-right: solid 0.5px #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+.dropdown {
+  font-weight: bold;
+  &:after {
+    content: ">";
+  }
 }

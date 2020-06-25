@@ -1,0 +1,13 @@
+<div class="navbar-root">
+  <h1 class="navbar-heading">canvas</h1>
+  <nav class="navbar-links">
+    <ul>
+      <li class="navbar-link__item" *ngFor="let item of navLinks">
+        <a href="{{ item.title }}">
+          <fa-icon [icon]="item.icon"></fa-icon>
+          {{ item.title }}</a
+        >
+      </li>
+    </ul>
+  </nav>
+</div>
