@@ -5,5 +5,19 @@
   height: 100%;
   width: 100%;
   top: 0px;
-  padding: 60px;
+  padding: 60px 100px 100px 150px;
+  animation-name: loaded-image;
+  animation-duration: 5s;
+  animation-delay: 1;
+  animation-direction: foward;
+  animation-fill-mode: linear;
+}
+
+@keyframes loaded-image {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

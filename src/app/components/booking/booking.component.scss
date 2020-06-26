@@ -1,0 +1,64 @@
+$background: #a7272c !default;
+
+label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-header h1 {
+  text-transform: uppercase;
+}
+
+.booking-switcher button {
+  color: #000;
+  background-color: #fff;
+
+  &:active {
+    background-color: $background;
+    color: white;
+  }
+}
+
+.booking-switcher .booking-type-active {
+  background-color: $background;
+  padding: 11px;
+  color: white;
+}
+
+.booking-form {
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+  margin-top: 20px;
+
+  span {
+    width: 50%;
+
+    input {
+      width: 90%;
+    }
+  }
+}
+
+.booking-section {
+  display: flex;
+  margin: 20px 0px;
+  width: 100%;
+}
+
+.booking-submit__btn {
+  color: #fff;
+  border-radius: 3px;
+  background-color: $background;
+  margin: 10px 0px;
+  padding: 12px 53px;
+}

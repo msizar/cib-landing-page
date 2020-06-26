@@ -1,0 +1,56 @@
+<div class="booking-root">
+  <div class="booking-header">
+    <h1>Book your flights</h1>
+    <div class="booking-switcher">
+      <button
+        (click)="onToggleBookingType(type)"
+        [ngClass]="setClasses(type)"
+        *ngFor="let type of bookingTypes"
+      >
+        {{ type }}
+      </button>
+    </div>
+  </div>
+
+  <div class="booking-form">
+    <form class="booking-form" (ngSubmit)="onSubmit()">
+      <span>
+        <label for="depart">From: </label><br />
+        <input
+          [placeholder]="getPlaceHolder().from"
+          type="text"
+          name="depart"
+          id="depart"
+        />
+      </span>
+
+      <span>
+        <label for="male">To: </label><br />
+        <input
+          [placeholder]="getPlaceHolder().to"
+          type="text"
+          name="destination"
+          id="destination"
+        />
+      </span>
+
+      <div class="booking-section">
+        <span>
+          <label for="male">Departure: </label><br />
+          <input type="date" name="destination" id="destination" value="2" />
+        </span>
+
+        <span>
+          <label for="male">Return: </label><br />
+          <input type="date" name="destination" id="destination" value="2" />
+        </span>
+
+        <span>
+          <label for="male">Adults: </label><br />
+          <input type="number" name="destination" id="destination" value="2" />
+        </span>
+      </div>
+      <button class="booking-submit__btn">Search flights</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.tabs-root {
+  margin-top: 50px;
+  width: 70%;
+}
+
+.tab-icon {
+  margin: 5px;
+}
+
+.tab-panel__header {
+  color: #fff;
+}
+
+.tab-content {
+  height: auto;
+  min-height: 60vh;
+  padding: 20px;
+
+  h1 {
+    text-transform: uppercase;
+  }
+}
+
+.tab-panel li {
+  width: 80%;
+  border-top: solid 5px #a7272c;
+  background-color: #fff;
+  padding: 50px;
+  color: black;
+}

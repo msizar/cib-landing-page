@@ -1,0 +1,68 @@
+<div class="tabs-root">
+  <p-tabView class="tab-view">
+    <p-tabPanel
+      class="tab-panel"
+      headerStyleClass="tab-panel__header"
+      header="tabItems[0].title"
+    >
+      <ng-template pTemplate="header">
+        <span class="tab-panel__header">
+          <fa-icon class="tab-icon" [icon]="tabItems[0].icon"></fa-icon>
+          {{ tabItems[0].title }}</span
+        >
+      </ng-template>
+
+      <div class="tab-content">
+        <app-booking></app-booking>
+      </div>
+    </p-tabPanel>
+
+    <p-tabPanel
+      class="tab-panel"
+      headerStyleClass="tab-panel__header"
+      header="tabItems[1].title"
+    >
+      <ng-template pTemplate="header">
+        <span class="tab-panel__header">
+          <fa-icon class="tab-icon" [icon]="tabItems[1].icon"></fa-icon>
+          {{ tabItems[1].title }}</span
+        >
+      </ng-template>
+      <div class="tab-content">
+        <h1>Book Your Hotel</h1>
+      </div>
+    </p-tabPanel>
+
+    <p-tabPanel
+      class="tab-panel"
+      headerStyleClass="tab-panel__header"
+      header="tabItems[2].title"
+    >
+      <ng-template pTemplate="header">
+        <span class="tab-panel__header">
+          <fa-icon class="tab-icon" [icon]="tabItems[2].icon"></fa-icon>
+          {{ tabItems[2].title }}</span
+        >
+      </ng-template>
+      <div class="tab-content">
+        <h1>Flight Hotel Deals</h1>
+      </div>
+    </p-tabPanel>
+
+    <p-tabPanel
+      class="tab-panel"
+      headerStyleClass="tab-panel__header"
+      header="tabItems[3].title"
+    >
+      <ng-template pTemplate="header">
+        <span class="tab-panel__header">
+          <fa-icon class="tab-icon" [icon]="tabItems[3].icon"></fa-icon>
+          {{ tabItems[3].title }}</span
+        >
+      </ng-template>
+      <div class="tab-content">
+        <h1>Holiday Package</h1>
+      </div>
+    </p-tabPanel>
+  </p-tabView>
+</div>

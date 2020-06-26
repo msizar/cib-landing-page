@@ -15,7 +15,7 @@ import {
 })
 export class NavbarComponent implements OnInit {
   navLinks = [
-    { title: 'home', icon: faHome },
+    { title: 'home', icon: faHome, active: true },
     { title: 'flight', icon: faPlaneDeparture },
     { title: 'hotels', icon: faHotel },
     { title: 'holidays', icon: faGift },
@@ -25,4 +25,10 @@ export class NavbarComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  setClass(link) {
+    return {
+      active: link.active,
+    };
+  }
 }

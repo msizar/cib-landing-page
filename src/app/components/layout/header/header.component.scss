@@ -45,6 +45,8 @@
 .dropdown {
   font-weight: bold;
   &:after {
-    content: ">";
+    font-family: "FontAwesome";
+    content: "\25be";
+    transform: rotate(-45deg);
   }
 }
