@@ -1,3 +1,13 @@
+.socials-links__list {
+  li {
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: solid;
+    }
+  }
+}
+
 .facebook-icon {
   display: inline-block;
   width: 50px;

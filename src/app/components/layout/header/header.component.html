@@ -3,6 +3,11 @@
     <ul class="header-links__list">
       <li [ngClass]="setClasses(link)" *ngFor="let link of toolbarLinks">
         {{ link.title }}
+        <div class="dropdown-content">
+          <a href="#">ZAR</a>
+          <a href="#">USD</a>
+          <a href="#">EUR</a>
+        </div>
       </li>
     </ul>
   </div>

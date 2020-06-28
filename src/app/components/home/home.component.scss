@@ -2,12 +2,13 @@
   position: absolute;
   background-position: initial;
   background: url("../../../assets/images/france.jpg") 0 0/100% 100% no-repeat;
+  background-size: 2500px 1000px;
+  background-position: center;
   height: 100%;
   width: 100%;
   top: 0px;
   padding: 60px 100px 100px 150px;
-  animation-name: loaded-image;
-  animation-duration: 5s;
+  animation: loaded-image 5s 1;
   animation-delay: 1;
   animation-direction: foward;
   animation-fill-mode: linear;
@@ -15,9 +16,15 @@
 
 @keyframes loaded-image {
   from {
-    opacity: 0;
+    opacity: 0.5;
   }
   to {
     opacity: 1;
+  }
+
+  0% {
+  }
+  50% {
+    background-position: Calc(-45vw - 40px) 50%;
   }
 }

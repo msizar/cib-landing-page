@@ -1,6 +1,16 @@
 .tabs-root {
   margin-top: 50px;
   width: 70%;
+  animation-name: rightFadeInOut;
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+
+@keyframes rightFadeInOut {
+  50% {
+    right: 2rem;
+    opacity: 1;
+  }
 }
 
 .tab-icon {
